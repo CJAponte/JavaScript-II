@@ -120,7 +120,7 @@ console.log(ticketPriceTotalAverage)
 
 // Problem 3
 // check how many donations are over $200
-
+ 
 let donationsOver200 = []
 function over200(donation){
     return donation > 200
