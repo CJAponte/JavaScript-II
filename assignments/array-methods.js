@@ -109,5 +109,25 @@ companies.push(runners.map(function(el){
 console.log(companies)
 
 // Problem 2
+// get the average donation 
+let ticketPriceTotalAverage = [];
+
+ticketPriceTotalAverage = runners.map(function(el){
+    return el.donation
+}).reduce((accum, curnVal)=>{return accum + curnVal}, 0) / runners.length
+
+console.log(ticketPriceTotalAverage)
 
 // Problem 3
+// check how many donations are over $200
+
+let donationsOver200 = []
+function over200(donation){
+    return donation > 200
+}
+
+donationsOver200 = runners.map((el)=>{
+    return el.donation
+}).filter(over200).length -1
+
+console.log(donationsOver200)
